@@ -17,6 +17,7 @@
         android:layout_centerVertical="false"
         android:layout_centerHorizontal="true"
         tools:ignore="RelativeOverlap">
+
         <RadioButton
             android:id="@+id/rbtn_us"
             android:layout_width="wrap_content"
