@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="60dp"
+    android:id="@+id/content">
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true" >
+        <RadioButton
+            android:id="@+id/rbtn_us"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="US$"
+            android:textSize="24dp"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_rd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="RD$"
+            android:textSize="24dp"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_eur"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="EUR$"
+            android:textSize="24dp"/>
+    </RadioGroup>
+
+
+
+    <EditText
+        android:id="@+id/etxt_monto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:inputType="numberDecimal"
+        android:hint="Introduzca el monto a calcular"
+        />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Convertir" />
+
+    <TextView
+        android:id="@+id/txtUS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:text="@string/us_text"
+        android:textAllCaps="true"
+        android:layout_below="@id/btnConvertir"
+        android:textSize="24dip"/>
+
+
+    <TextView
+        android:id="@+id/txtRD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="230dp"
+        android:text="@string/dop_text"
+        android:textAllCaps="true"
+        android:layout_below="@id/txtUS"
+        android:textSize="24dip"/>
+
+    <TextView
+        android:id="@+id/txtEUR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtRD"
+        android:text="@string/eur_text"
+        android:textAllCaps="true"
+        android:textSize="24dip" />
+
+    <EditText
+        android:id="@+id/etxt_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtUS"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/etxt_dop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtRD"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/etxt_eur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignBottom="@+id/txtEUR"
+        android:focusable="false"
+        />
+
+
+
+
+</RelativeLayout>
+
