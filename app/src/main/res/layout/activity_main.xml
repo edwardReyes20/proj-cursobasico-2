@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginLeft="8dp"
+    android:layout_marginStart="8dp"
     android:layout_marginTop="60dp"
     android:id="@+id/content">
 
@@ -16,30 +15,29 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_centerVertical="false"
-        android:layout_centerHorizontal="true" >
+        android:layout_centerHorizontal="true"
+        tools:ignore="RelativeOverlap">
         <RadioButton
             android:id="@+id/rbtn_us"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="US$"
-            android:textSize="24dp"/>
+            android:text="@string/us_text"
+            android:textSize="23sp"/>
 
         <RadioButton
             android:id="@+id/rbtn_rd"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="RD$"
-            android:textSize="24dp"/>
+            android:text="@string/dop_text"
+            android:textSize="23sp"/>
 
         <RadioButton
             android:id="@+id/rbtn_eur"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="EUR$"
-            android:textSize="24dp"/>
+            android:text="@string/eur_text"
+            android:textSize="23sp"/>
     </RadioGroup>
-
-
 
     <EditText
         android:id="@+id/etxt_monto"
@@ -49,17 +47,28 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="100dp"
         android:inputType="numberDecimal"
-        android:hint="Introduzca el monto a calcular"
+        android:hint="@string/monto"
         />
 
     <Button
         android:id="@+id/btnConvertir"
-        android:layout_width="173dp"
+        android:layout_width="153dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:text="Convertir" />
+        android:layout_marginTop="98dp"
+        android:text="@string/calculo_btn" />
+
+    <Button
+        android:id="@+id/btnVerTasa"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnConvertir"
+        android:text="@string/ver_tasas"
+        />
 
     <TextView
         android:id="@+id/txtUS"
@@ -72,8 +81,7 @@
         android:text="@string/us_text"
         android:textAllCaps="true"
         android:layout_below="@id/btnConvertir"
-        android:textSize="24dip"/>
-
+        android:textSize="23sp"/>
 
     <TextView
         android:id="@+id/txtRD"
@@ -86,7 +94,7 @@
         android:text="@string/dop_text"
         android:textAllCaps="true"
         android:layout_below="@id/txtUS"
-        android:textSize="24dip"/>
+        android:textSize="23sp"/>
 
     <TextView
         android:id="@+id/txtEUR"
@@ -98,7 +106,7 @@
         android:layout_below="@id/txtRD"
         android:text="@string/eur_text"
         android:textAllCaps="true"
-        android:textSize="24dip" />
+        android:textSize="23sp" />
 
     <EditText
         android:id="@+id/etxt_us"
@@ -107,9 +115,11 @@
         android:layout_alignBottom="@+id/txtUS"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:ems="10"
+        android:ems="11"
         android:inputType="numberDecimal"
-        android:focusable="false"/>
+        android:focusable="false"
+        android:hint="@string/us_edit_text"
+        tools:ignore="RelativeOverlap" />
 
     <EditText
         android:id="@+id/etxt_dop"
@@ -118,9 +128,11 @@
         android:layout_alignBottom="@+id/txtRD"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:ems="10"
+        android:ems="11"
         android:inputType="numberDecimal"
-        android:focusable="false"/>
+        android:focusable="false"
+        android:hint="@string/dop_edit_text"
+        tools:ignore="RelativeOverlap" />
 
     <EditText
         android:id="@+id/etxt_eur"
@@ -128,14 +140,22 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:ems="10"
+        android:ems="11"
         android:inputType="numberDecimal"
         android:layout_alignBottom="@+id/txtEUR"
         android:focusable="false"
+        android:hint="@string/eur_edit_text"
         />
 
-
-
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etxt_eur"
+        android:layout_centerHorizontal="true"
+        android:text="@string/limpiar"
+       />
 
 </RelativeLayout>
+
 

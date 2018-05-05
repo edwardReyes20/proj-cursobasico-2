@@ -1,14 +1,17 @@
 <resources>
     <string name="app_name">Calculadora de divisas</string>
-    <string name="us_text">US =</string>
-    <string name="us_edit_text">"Introduzca cantidad de Dolares"</string>
-    <string name="eur_text">EUR = </string>
-    <string name="eur_edit_text">"Introduzca cantidad de Euros"</string>
-    <string name="dop_text">DOP =</string>
-    <string name="dop_edit_text">"Introduzca cantidad de Pesos Dominicanos"</string>
+    <string name="us_text">US$ =</string>
+    <string name="us_edit_text">"Resultado conversion a US$"</string>
+    <string name="eur_text">EUR$ = </string>
+    <string name="eur_edit_text">"Resultado conversion a EUR$"</string>
+    <string name="dop_text">DOP$ =</string>
+    <string name="dop_edit_text">"Resultado conversion a DOP$"</string>
     <string name="calculo_btn">"Calcular"</string>
     <string name="action_refresh">"Actualizar tasas"</string>
     <string name="action_help">"Ayuda"</string>
-    <string name="about">"Ayuda"</string>
+    <string name="about">"Acerca de"</string>
+    <string name="monto">"Introduzca el monto a Calcular"</string>
+    <string name="ver_tasas">"Valor monedas"</string>
+    <string name="limpiar">"Limpiar resultados"</string>
 
 </resources>
