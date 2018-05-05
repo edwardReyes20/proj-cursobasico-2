@@ -83,42 +83,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             limpiar();
         }
 
-//        if (v == rbtn_dollar){
-//            rbtn_euros.setChecked(false);
-//            rbtn_pesos.setChecked(false);
-//        }
-//
-//        if (v == rbtn_pesos){
-//            rbtn_euros.setChecked(false);
-//            rbtn_dollar.setChecked(false);
-//        }
-//
-//        if(v == rbtn_euros){
-//            rbtn_dollar.setChecked(false);
-//            rbtn_pesos.setChecked(false);
-//
-//        }
-
         InputMethodManager inputMethodManager = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
 
         assert inputMethodManager != null;
         inputMethodManager.hideSoftInputFromWindow(monto_conversion.getWindowToken(), 0);
 
     }
-/*
-    @SuppressLint("SetTextI18n")
-    public void calcular(TextView textView){
 
-        double valor_monto;
-
-        valor_monto =Double.parseDouble(monto_conversion.getText().toString());
-        textView.setText(Double.toString(valor_monto));
-
-        pesos.setText(Double.toString(valor_monto * valor_tasa_us));
-        euros.setText(Double.toString(valor_monto / valor_tasa_eur));
-
-    }
-*/
     @SuppressLint("SetTextI18n")
     public void calcularDolares(){
 
